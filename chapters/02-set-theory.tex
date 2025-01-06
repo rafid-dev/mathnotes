@@ -1,0 +1,101 @@
+\chapter{Set Theory}
+
+\section{Introduction}
+
+In mathematics, we encounter a wide variety of objects. Set theory provides a fundamental framework for constructing these objects, while logic helps us distinguish and describe any equivalent relationships between them. In this section, we will acquaint ourselves with the essential concepts of set theory and the basics of logical reasoning.
+\newline
+\section{Sets}
+
+\begin{definitionbox}{Set}
+A \textbf{set} is a collection of objects, called \textbf{elements}. We denote a set by curly braces, \(\{\}\), and list the elements inside.
+
+\begin{itemize}
+    \item If an item \(a\) belongs to the set \(P\), we denote it by \(a \in P\). If an item \(b\) does not belong to the set \(P\), we denote it by \(b \notin P\).
+    
+    \item A set may be constructed using \textbf{set builder notation} as follows. Suppose \(P\) is our set. Then, we can write
+    \[
+    P = \{x \mid \text{some condition } C \text{ is true for } x\},
+    \]
+    where \(x\) is an element from a specified domain. This is read as "The set of all \(x\) such that some condition \(C\) is satisfied."
+
+    \item We denote the \textbf{empty set} by \(\emptyset\) or \(\{\}\).
+\end{itemize}
+\end{definitionbox}
+
+
+\begin{example}
+\samepage
+Some common examples of sets are:
+\begin{itemize}
+    \item The set of natural numbers: \(\mathbb{N} = \{1, 2, 3, \ldots\}\).
+    \item The set of integers: \(\mathbb{Z} = \{\ldots, -2, -1, 0, 1, 2, \ldots\}\).
+    \item The set of rational numbers: \(\mathbb{Q} = \left\{\frac{a}{b} \mid a, b \in \mathbb{Z}, b \neq 0\right\}\).
+    \item The set of real numbers: \(\mathbb{R} = \{x \mid x \text{ is a real number}\}\).
+\end{itemize}
+\end{example}
+
+\begin{example}
+The set \(\mathcal{V}\) of all English vowels can be written as
+\[
+\mathcal{V} = \{a, e, i, o, u\}.
+\]
+\end{example}
+
+\begin{example}
+A \textbf{\textit{collection}} refers to a set whose \textit{elements are themselves sets}. Consider the following sets:
+
+\[
+E = \{2, 4, 6, 8, \dots\}, \quad O = \{1, 3, 5, 7, \dots\}, \quad P = \{2, 3, 5, 7, 11, \dots\}
+\]
+
+where:
+\begin{itemize}
+    \item \(E\) is the set of all \textbf{even numbers},
+    \item \(O\) is the set of all \textbf{odd numbers}, and
+    \item \(P\) is the set of all \textbf{prime numbers}.
+\end{itemize}
+
+We can now define a new set \(X\) as a \textit{collection of sets}:
+
+\[
+X = \{E, O, P\}
+\]
+
+Here, each element of \(X\) is itself a set. Thus, \(X\) is a \textit{collection of sets}. For example, the element \(E \in X\) represents the set of all even numbers.
+
+Notice that:
+\[
+x \in X \implies x \text{ is a set}.
+\]
+
+
+Sets are not limited to containing only numbers. The preceding examples highlight that sets can consist of various types of objects, including numbers, letters, or even other sets!
+
+\end{example}
+
+
+\begin{definitionbox}{Subset}
+A set \(A\) is a \textbf{subset} of a set \(B\) if every element of \(A\) is also an element of \(B\). We denote this by \(A \subseteq B\). This is read as "A is a subset of B" or "A is contained in B," which is the convention we will use throughout these notes.
+\end{definitionbox}
+
+\begin{example}
+Here are some common examples of subsets:
+\begin{itemize}
+    \item The set of even numbers is a subset of natural numbers: \(E \subseteq \mathbb{N}\), where \(E = \{2, 4, 6, 8, \dots\}\).
+    \item The set of integers is a subset of real numbers: \(\mathbb{Z} \subseteq \mathbb{R}\).
+    \item The set of rational numbers is a subset of real numbers: \(\mathbb{Q} \subseteq \mathbb{R}\).
+    \item The empty set is a subset of every set: \(\emptyset \subseteq A\) for any set \(A\).
+\end{itemize}
+\end{example}
+
+\begin{example}
+Let \(A = \{1, 2, 3\}\) and \(B = \{1, 2, 3, 4, 5\}\). Then \(A\) is a subset of \(B\), denoted as \(A \subseteq B\), since every element of \(A\) is also in \(B\).
+Similarly, \(B\) is not a subset of \(A\), denoted as \(B \not\subseteq A\), since \(4\) and \(5\) are elements of \(B\) but not in \(A\).
+\end{example}
+
+\begin{theorembox}{Set Equality}
+Two sets \(A\) and \(B\) are equal if and only if they have the same elements. We denote this by \(A = B\).
+\end{theorembox}
+\begin{proof}
+    Let \( A \) and \( B \) be two sets. Assume \( A \subseteq B \) and \( B \subseteq A \). Therefore, every element in \( A \) is also in \( B \), and vice versa. Hence, \( A = B \).
+\end{proof}

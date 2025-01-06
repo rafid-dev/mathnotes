@@ -1,0 +1,7 @@
+PWD f:/Projects/MathNotes/sections
+INPUT c:/Users/Rafid/AppData/Roaming/TinyTeX/texmf.cnf
+INPUT c:/Users/Rafid/AppData/Roaming/TinyTeX/texmf-dist/web2c/texmf.cnf
+INPUT c:/Users/Rafid/AppData/Roaming/TinyTeX/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT f:/Projects/MathNotes/sections/02-set-theory.tex
+OUTPUT build/02-set-theory.log
+INPUT c:/Users/Rafid/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
