@@ -1,3 +1,7 @@
+% Math Notes by Rafid Ahsan
+% Licensed under the GNU General Public License v3.0 or later
+% See https://www.gnu.org/licenses/gpl-3.0.html for details
+
 % Basic document class setup
 \documentclass[12pt]{book}
 \usepackage{amsmath}
@@ -61,8 +65,22 @@
     \par\noindent\hfill$\triangle$% End with a triangle symbol
 }
 
-% Customize the proof environment
 \renewenvironment{proof}[1][Proof]{%
-    \par\noindent\textit{\textbf{\textcolor{proofcolor}{#1:}}}\ }{%
+    \par\noindent\textbf{\textcolor{proofcolor}{#1.}}\hspace{1em}%
+}{%
     \hfill$\qedsymbol$\par
 }
+
+\usepackage[pdftex, bookmarks, colorlinks, linkcolor=blue, urlcolor=blue]{hyperref}  % Enable PDF bookmarks
+\hypersetup{
+    pdftitle={Notes on Analysis, Topology, and Manifolds},
+    pdfauthor={Rafid Ahsan},
+    pdfsubject={Mathematics Notes},
+    pdfkeywords={Analysis, Topology, Manifolds, Mathematics}
+}
+
+% preamble.tex
+\usepackage{fancyhdr}  % For custom headers and footers
+\pagestyle{fancy}
+\fancyfoot[C]{\texttt{\textcopyright~2025 Rafid Ahsan | GNU Free Documentation License v1.3}}  % Footer text
+\renewcommand{\footrulewidth}{0.4pt}  % Add a line to the footer
